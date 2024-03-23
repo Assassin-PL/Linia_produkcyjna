@@ -56,5 +56,14 @@ namespace testera_sprawności_psychomotorycznej
         {
             Process.Start(Properties.Resources.url);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.testy_okno = new Testy(this);
+            testy_okno.Owner = this;
+            this.testy_okno.ShowDialog();
+
+        }
     }
 }

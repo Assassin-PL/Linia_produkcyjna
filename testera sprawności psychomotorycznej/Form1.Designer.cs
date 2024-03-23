@@ -10,6 +10,7 @@ namespace testera_sprawności_psychomotorycznej
         /// </summary>
         private System.ComponentModel.IContainer components = null;
         private Ustawienia ustawienia_okno;
+        private Testy testy_okno;
         private int currentImageIndex = 0;
         public int backgroundID = 0;
         public List<Image> backgroundList = new List<Image>
@@ -66,7 +67,7 @@ namespace testera_sprawności_psychomotorycznej
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.617F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.383F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 221F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 223F));
             this.tableLayoutPanel1.Controls.Add(this.button3, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.button2, 2, 2);
@@ -89,7 +90,7 @@ namespace testera_sprawności_psychomotorycznej
             // button3
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.Location = new System.Drawing.Point(65, 19);
+            this.button3.Location = new System.Drawing.Point(64, 19);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(149, 105);
             this.button3.TabIndex = 2;
@@ -100,9 +101,9 @@ namespace testera_sprawności_psychomotorycznej
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::testera_sprawności_psychomotorycznej.Properties.Resources.janusz;
-            this.pictureBox1.Location = new System.Drawing.Point(282, 147);
+            this.pictureBox1.Location = new System.Drawing.Point(281, 147);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(626, 325);
+            this.pictureBox1.Size = new System.Drawing.Size(625, 325);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -110,7 +111,7 @@ namespace testera_sprawności_psychomotorycznej
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.Location = new System.Drawing.Point(958, 494);
+            this.button2.Location = new System.Drawing.Point(957, 494);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 102);
             this.button2.TabIndex = 1;
@@ -121,7 +122,7 @@ namespace testera_sprawności_psychomotorycznej
             // button6
             // 
             this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button6.Location = new System.Drawing.Point(67, 514);
+            this.button6.Location = new System.Drawing.Point(66, 514);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(145, 63);
             this.button6.TabIndex = 6;
@@ -132,7 +133,7 @@ namespace testera_sprawności_psychomotorycznej
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(536, 65);
+            this.label1.Location = new System.Drawing.Point(534, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 13);
             this.label1.TabIndex = 7;
@@ -142,7 +143,7 @@ namespace testera_sprawności_psychomotorycznej
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(545, 539);
+            this.label2.Location = new System.Drawing.Point(543, 539);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 13);
             this.label2.TabIndex = 8;
@@ -158,11 +159,12 @@ namespace testera_sprawności_psychomotorycznej
             this.button1.TabIndex = 0;
             this.button1.Text = "Testy";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.Location = new System.Drawing.Point(950, 16);
+            this.button4.Location = new System.Drawing.Point(949, 16);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(143, 111);
             this.button4.TabIndex = 3;
@@ -173,7 +175,7 @@ namespace testera_sprawności_psychomotorycznej
             // button5
             // 
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button5.Location = new System.Drawing.Point(947, 252);
+            this.button5.Location = new System.Drawing.Point(946, 252);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(150, 114);
             this.button5.TabIndex = 5;
@@ -206,7 +208,6 @@ namespace testera_sprawności_psychomotorycznej
         #endregion
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button5;
@@ -215,6 +216,7 @@ namespace testera_sprawności_psychomotorycznej
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
         public System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        public System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
