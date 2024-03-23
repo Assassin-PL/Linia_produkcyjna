@@ -63,6 +63,26 @@ namespace testera_sprawności_psychomotorycznej.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bananki {
+            get {
+                object obj = ResourceManager.GetObject("bananki", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ciemne_banany {
+            get {
+                object obj = ResourceManager.GetObject("ciemne_banany", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap janusz {
             get {
                 object obj = ResourceManager.GetObject("janusz", resourceCulture);

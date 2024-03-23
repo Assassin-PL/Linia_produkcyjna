@@ -11,14 +11,15 @@ using System.Diagnostics;
 
 namespace testera_sprawności_psychomotorycznej
 {
-    public partial class Form1 : Form
+    public partial class Glowny_Program : Form
     {
 
-        public Form1()
+        public Glowny_Program()
         {
             InitializeComponent();
             this.pictureBox1.Image = Properties.Resources.janusz;
             this.pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            this.tableLayoutPanel1.BackgroundImage = backgroundList[backgroundID];
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -33,6 +34,7 @@ namespace testera_sprawności_psychomotorycznej
             // Wczytaj następny obraz do PictureBox
             this.pictureBox1.Image = imagesList[currentImageIndex];
             this.pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            // this.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -42,6 +44,11 @@ namespace testera_sprawności_psychomotorycznej
 
         private void button5_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            this.ustawienia_okno = new Ustawienia(this);
+            // Ustawienie bieżącego formularza jako właściciela dla nowego formularza
+            ustawienia_okno.Owner = this;
+            this.ustawienia_okno.ShowDialog();
 
         }
 

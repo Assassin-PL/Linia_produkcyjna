@@ -16,7 +16,7 @@ namespace testera_sprawności_psychomotorycznej
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Glowny_Program());
         }
     }
 }
