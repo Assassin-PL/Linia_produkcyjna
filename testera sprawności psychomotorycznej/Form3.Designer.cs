@@ -1,4 +1,5 @@
-﻿
+﻿using System.Drawing;     // Dla zmiennej typu Color
+
 namespace testera_sprawności_psychomotorycznej
 {
     partial class Testy
@@ -8,6 +9,10 @@ namespace testera_sprawności_psychomotorycznej
         /// </summary>
         private System.ComponentModel.IContainer components = null;
         Glowny_Program OknoRodzic1;
+        private Color KolorTla_1;
+        private Color KolorTla_2;
+        private Color KolorTla_3;
+        private OknoInfo OknoHelp;
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -76,6 +81,9 @@ namespace testera_sprawności_psychomotorycznej
             this.button1.TabIndex = 0;
             this.button1.Text = "Test 1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseLeave += new System.EventHandler(this.Przycisk_MouseLeave);
+            this.button1.MouseHover += new System.EventHandler(this.Przycisk_MouseHover);
             // 
             // button2
             // 
@@ -95,6 +103,9 @@ namespace testera_sprawności_psychomotorycznej
             this.button3.TabIndex = 2;
             this.button3.Text = "Test 4";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.MouseLeave += new System.EventHandler(this.Przycisk_MouseLeave);
+            this.button3.MouseHover += new System.EventHandler(this.Przycisk_MouseHover);
             // 
             // button4
             // 
@@ -104,6 +115,9 @@ namespace testera_sprawności_psychomotorycznej
             this.button4.TabIndex = 3;
             this.button4.Text = "Test 2";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.MouseLeave += new System.EventHandler(this.Przycisk_MouseLeave);
+            this.button4.MouseHover += new System.EventHandler(this.Przycisk_MouseHover);
             // 
             // button5
             // 
@@ -113,6 +127,9 @@ namespace testera_sprawności_psychomotorycznej
             this.button5.TabIndex = 4;
             this.button5.Text = "Test 5";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.MouseLeave += new System.EventHandler(this.Przycisk_MouseLeave);
+            this.button5.MouseHover += new System.EventHandler(this.Przycisk_MouseHover);
             // 
             // button6
             // 
@@ -122,6 +139,9 @@ namespace testera_sprawności_psychomotorycznej
             this.button6.TabIndex = 5;
             this.button6.Text = "Test 3";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.MouseLeave += new System.EventHandler(this.Przycisk_MouseLeave);
+            this.button6.MouseHover += new System.EventHandler(this.Przycisk_MouseHover);
             // 
             // button7
             // 
@@ -141,6 +161,9 @@ namespace testera_sprawności_psychomotorycznej
             this.button8.TabIndex = 7;
             this.button8.Text = "Test 6";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.MouseLeave += new System.EventHandler(this.Przycisk_MouseLeave);
+            this.button8.MouseHover += new System.EventHandler(this.Przycisk_MouseHover);
             // 
             // pictureBox1
             // 
