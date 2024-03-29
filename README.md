@@ -1,55 +1,42 @@
-Program do sprawdzania sprawnosci psychomotorycznej kierowców:
+# Symulator Stanowiska Dyspozytorskiego
 
-Plan: Projektowanie interfejsu użytkownika:
+## Cel Aplikacji
 
-Dodaj formularze dla każdego testu oraz formularz podsumowania wyników.
-Na każdym formularzu umieść odpowiednie kontrolki do wyświetlania informacji o teście oraz do interakcji z użytkownikiem (np. przyciski, etykiety, pola tekstowe).
-Skonfiguruj interfejs tak, aby był czytelny i intuicyjny dla użytkownika.
-Implementacja logiki aplikacji:
+Aplikacja "Symulator Stanowiska Dyspozytorskiego" została stworzona w celu symulowania rzeczywistych warunków pracy na stanowisku dyspozytorskim. Jej głównym celem jest monitorowanie procesu produkcyjnego oraz aktywności operatora. Operator ma za zadanie nadzorować proces produkcyjny i podejmować odpowiednie działania w przypadku awarii lub przekroczenia granicznych wartości parametrów.
 
-Stwórz klasy odpowiadające za przeprowadzanie poszczególnych testów (np. testy optyczne, akustyczne).
-Każda klasa testu powinna zawierać metody do rozpoczęcia testu, pomiaru czasu reakcji, zakończenia testu oraz przetwarzania wyników.
-Utwórz klasę odpowiedzialną za analizę i prezentację wyników, która będzie używana do wygenerowania raportu po zakończeniu wszystkich testów.
-Implementacja funkcji pomiaru czasu:
+## Parametry do Monitorowania
 
-Wykorzystaj funkcje zegara systemowego lub funkcje biblioteki .NET do pomiaru czasu reakcji użytkownika.
-Zadbaj o precyzję pomiaru i odpowiednie zarządzanie czasem w aplikacji.
-Interakcja z użytkownikiem:
+Aplikacja monitoruje następujące parametry:
+- Temperatura procesora: Monitorowanie temperatury rdzenia procesora w celu zapobiegania przegrzaniu.
+- Obciążenie procesora: Śledzenie obciążenia procesora w celu monitorowania wydajności systemu.
+- Prędkość wentylatorów: Monitorowanie prędkości obrotowych wentylatorów w celu zapewnienia odpowiedniego chłodzenia.
 
-Obsłuż interakcję użytkownika z interfejsem aplikacji.
-Wprowadź mechanizmy zabezpieczające przed nieprawidłowymi działaniami użytkownika (np. unikanie wielokrotnego klikania przycisków).
-Testowanie i debugowanie:
+## Symulacja Procesu Produkcyjnego
 
-Przetestuj każdą część aplikacji, upewniając się, że działa zgodnie z oczekiwaniami.
-Debuguj błędy i wprowadź ewentualne poprawki.
-Dodatkowe funkcjonalności:
+Aplikacja symuluje proces produkcyjny poprzez:
+- Generowanie losowych wartości parametrów: Wykorzystuje generatora liczb losowych do symulowania różnych parametrów procesu produkcyjnego, takich jak temperatura, obciążenie itp.
+- Obsługę awarii i przekroczeń granicznych wartości: Implementuje mechanizmy symulujące losowe awarie oraz przekroczenia granicznych wartości parametrów. Na przykład, symulacja przegrzania procesora lub nagłego wzrostu obciążenia, co wymaga odpowiedniej reakcji ze strony operatora.
 
-Dodaj funkcje raportowania wyników w formie syntetycznej i analitycznej, wykorzystując wartości liczbowe i reprezentacje graficzne (np. wykresy).
-Możesz także dodać funkcje zapisu i odczytu wyników z pliku lub bazy danych dla późniejszej analizy.
+## Obsługa Awarii i Przekroczeń Granicznych Wartości
 
-Zalecane Testy :
+Aplikacja obsługuje awarie i przekroczenia granicznych wartości poprzez:
+- Wyświetlanie komunikatów i ostrzeżeń: Informuje operatora o wykrytych awariach lub przekroczeniach granicznych wartości parametrów.
+- Pozwala operatorowi podejmować działania w celu rozwiązania problemu, na przykład zmiana prędkości wentylatorów lub zatrzymanie procesu produkcyjnego.
 
-Testy reakcji:
+## Implementacja
 
-Test reakcji na światło: Kierowca musi nacisnąć przycisk po zaświeceniu światła, symulując reakcję na zmianę sygnalizacji świetlnej.
-Test reakcji na dźwięk: Kierowca musi zareagować na dźwięk syreny lub klaksonu poprzez naciśnięcie przycisku.
-Testy percepcji:
+Aplikacja została zaimplementowana w języku C# przy użyciu technologii Windows Forms. Interfejs użytkownika składa się z okna logowania oraz panelu monitorującego. Dodatkowo, aplikacja zawiera mechanizm autodiagnostyczny, który okresowo sprawdza aktywność operatora poprzez wciśnięcie klawisza.
 
-Test rozpoznawania znaków drogowych: Kierowca musi szybko zidentyfikować i odpowiedzieć na wyświetlany znak drogowy.
-Test śledzenia ruchu: Kierowca musi śledzić poruszający się obiekt na ekranie i szybko reagować na zmiany.
-Testy koordynacji ręka-oko:
+## Używanie Aplikacji
 
-Test precyzyjności: Kierowca musi manewrować pojazdem, aby uniknąć przeszkód na drodze.
-Test skupienia uwagi: Kierowca musi jednocześnie śledzić kilka obiektów na ekranie i podejmować szybkie decyzje.
-Testy wytrzymałości:
+1. Uruchom aplikację.
+2. Zaloguj się używając swojego konta.
+3. Monitoruj parametry procesu produkcyjnego na panelu monitorującym.
+4. W razie awarii lub przekroczenia granicznych wartości parametrów, podejmij odpowiednie działania.
 
-Test długotrwałej uwagi: Kierowca musi utrzymać wysoki poziom koncentracji przez określony czas podczas symulacji długiej podróży.
-Test reakcji na zmęczenie: Kierowca musi odpowiedzieć na sygnały zmęczenia, np. przez naciśnięcie przycisku w odpowiednim momencie.
-Testy radzenia sobie w sytuacjach kryzysowych:
+## Autor
 
-Symulacja hamowania awaryjnego: Kierowca musi jak najszybciej zareagować na sytuację, w której nagle pojawia się przeszkoda na drodze.
-Test radzenia sobie w warunkach pogorszonych: Kierowca musi poradzić sobie z trudnymi warunkami drogowymi, takimi jak deszcz, mgła lub śliska nawierzchnia.
-Testy oceny ryzyka:
+Aplikacja została stworzona przez Michał Zarzycki 184856. Kewin Trochowski.
 
-Test podejmowania decyzji: Kierowca musi ocenić sytuację na drodze i podjąć właściwą decyzję, np. dotyczącą wyprzedzania lub zmiany pasa ruchu.
-Test przewidywania: Kierowca musi przewidzieć zachowanie innych uczestników ruchu i dostosować swoje działania odpowiednio.
+---
+© 2024 Michał Zarzycki 184856. Kewin Trochowski.
