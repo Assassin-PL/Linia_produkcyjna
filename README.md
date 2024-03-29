@@ -1,40 +1,42 @@
-Sformułowanie zadania i założeń szczegółowych:
+# Symulator Stanowiska Dyspozytorskiego
 
-Określenie celu aplikacji: stworzenie symulatora stanowiska dyspozytorskiego, który monitoruje proces produkcyjny oraz aktywność operatora.
-Wybór parametrów do monitorowania: temperatura procesora, obciążenie procesora, prędkość wentylatorów itp.
-Symulacja procesu produkcyjnego: generowanie losowych wartości parametrów oraz obsługa losowych awarii i przekroczeń granicznych wartości.
-Opis przyjętych rozwiązań programowych:
+## Cel Aplikacji
 
-Stworzenie interfejsu użytkownika z wykorzystaniem Windows Forms, który będzie zawierał okno logowania oraz panel monitorujący.
-Implementacja mechanizmu autodiagnostycznego: okresowe sprawdzanie aktywności operatora poprzez wciśnięcie klawisza.
-Symulacja parametrów procesu produkcyjnego: wykorzystanie generatora liczb losowych do generowania wartości parametrów.
-Obsługa awarii i przekroczeń granicznych wartości: w zależności od sytuacji wyświetlanie odpowiednich komunikatów oraz podejmowanie odpowiednich działań (np. uruchomienie alarmu, zmiana prędkości wentylatorów).
-Logowanie zdarzeń i komunikatów dla operatora.Sformułowanie zadania i założeń szczegółowych:
+Aplikacja "Symulator Stanowiska Dyspozytorskiego" została stworzona w celu symulowania rzeczywistych warunków pracy na stanowisku dyspozytorskim. Jej głównym celem jest monitorowanie procesu produkcyjnego oraz aktywności operatora. Operator ma za zadanie nadzorować proces produkcyjny i podejmować odpowiednie działania w przypadku awarii lub przekroczenia granicznych wartości parametrów.
 
-Określenie celu aplikacji: stworzenie symulatora stanowiska dyspozytorskiego, który monitoruje proces produkcyjny oraz aktywność operatora.
-Wybór parametrów do monitorowania: temperatura procesora, obciążenie procesora, prędkość wentylatorów itp.
-Symulacja procesu produkcyjnego: generowanie losowych wartości parametrów oraz obsługa losowych awarii i przekroczeń granicznych wartości.
-Opis przyjętych rozwiązań programowych:
+## Parametry do Monitorowania
 
-Stworzenie interfejsu użytkownika z wykorzystaniem Windows Forms, który będzie zawierał okno logowania oraz panel monitorujący.
-Implementacja mechanizmu autodiagnostycznego: okresowe sprawdzanie aktywności operatora poprzez wciśnięcie klawisza.
-Symulacja parametrów procesu produkcyjnego: wykorzystanie generatora liczb losowych do generowania wartości parametrów.
-Obsługa awarii i przekroczeń granicznych wartości: w zależności od sytuacji wyświetlanie odpowiednich komunikatów oraz podejmowanie odpowiednich działań (np. uruchomienie alarmu, zmiana prędkości wentylatorów).
-Logowanie zdarzeń i komunikatów dla operatora.
+Aplikacja monitoruje następujące parametry:
+- Temperatura procesora: Monitorowanie temperatury rdzenia procesora w celu zapobiegania przegrzaniu.
+- Obciążenie procesora: Śledzenie obciążenia procesora w celu monitorowania wydajności systemu.
+- Prędkość wentylatorów: Monitorowanie prędkości obrotowych wentylatorów w celu zapewnienia odpowiedniego chłodzenia.
 
-Cel aplikacji:
-Stworzenie aplikacji symulującej stanowisko dyspozytorskie, które ma za zadanie monitorować proces produkcyjny oraz aktywność operatora. Aplikacja ma na celu symulowanie rzeczywistych warunków pracy na stanowisku dyspozytorskim, gdzie operator jest odpowiedzialny za nadzór nad procesem produkcyjnym i podejmowanie odpowiednich działań w przypadku awarii lub przekroczenia granicznych wartości parametrów.
+## Symulacja Procesu Produkcyjnego
 
-Parametry do monitorowania:
+Aplikacja symuluje proces produkcyjny poprzez:
+- Generowanie losowych wartości parametrów: Wykorzystuje generatora liczb losowych do symulowania różnych parametrów procesu produkcyjnego, takich jak temperatura, obciążenie itp.
+- Obsługę awarii i przekroczeń granicznych wartości: Implementuje mechanizmy symulujące losowe awarie oraz przekroczenia granicznych wartości parametrów. Na przykład, symulacja przegrzania procesora lub nagłego wzrostu obciążenia, co wymaga odpowiedniej reakcji ze strony operatora.
 
-Temperatura procesora: Monitorowanie temperatury rdzenia procesora w celu zapobiegania przegrzaniu.
-Obciążenie procesora: Śledzenie obciążenia procesora w celu monitorowania wydajności systemu.
-Prędkość wentylatorów: Monitorowanie prędkości obrotowych wentylatorów w celu zapewnienia odpowiedniego chłodzenia.
-Symulacja procesu produkcyjnego:
+## Obsługa Awarii i Przekroczeń Granicznych Wartości
 
-Generowanie losowych wartości parametrów: Wykorzystanie generatora liczb losowych do symulowania różnych parametrów procesu produkcyjnego, takich jak temperatura, obciążenie itp.
-Obsługa awarii i przekroczeń granicznych wartości: Implementacja mechanizmów symulujących losowe awarie oraz przekroczenia granicznych wartości parametrów. Na przykład, symulacja przegrzania procesora lub nagłego wzrostu obciążenia, co wymagać będzie odpowiedniej reakcji ze strony operatora.
-Obsługa awarii i przekroczeń granicznych wartości:
+Aplikacja obsługuje awarie i przekroczenia granicznych wartości poprzez:
+- Wyświetlanie komunikatów i ostrzeżeń: Informuje operatora o wykrytych awariach lub przekroczeniach granicznych wartości parametrów.
+- Pozwala operatorowi podejmować działania w celu rozwiązania problemu, na przykład zmiana prędkości wentylatorów lub zatrzymanie procesu produkcyjnego.
 
-Komunikaty i ostrzeżenia: Wyświetlanie odpowiednich komunikatów i ostrzeżeń w przypadku wykrycia awarii lub przekroczenia granicznych wartości parametrów.
-Działania operatora: Zapewnienie interakcji z operatorem poprzez umożliwienie mu podejmowania działań w celu rozwiązania problemu, na przykład zmiana prędkości wentylatorów lub zatrzymanie procesu produkcyjnego.
+## Implementacja
+
+Aplikacja została zaimplementowana w języku C# przy użyciu technologii Windows Forms. Interfejs użytkownika składa się z okna logowania oraz panelu monitorującego. Dodatkowo, aplikacja zawiera mechanizm autodiagnostyczny, który okresowo sprawdza aktywność operatora poprzez wciśnięcie klawisza.
+
+## Używanie Aplikacji
+
+1. Uruchom aplikację.
+2. Zaloguj się używając swojego konta.
+3. Monitoruj parametry procesu produkcyjnego na panelu monitorującym.
+4. W razie awarii lub przekroczenia granicznych wartości parametrów, podejmij odpowiednie działania.
+
+## Autor
+
+Aplikacja została stworzona przez Michał Zarzycki 184856. Kewin Trochowski.
+
+---
+© 2024 Michał Zarzycki 184856. Kewin Trochowski.
