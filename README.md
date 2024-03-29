@@ -1,55 +1,40 @@
-Program do sprawdzania sprawnosci psychomotorycznej kierowców:
+Sformułowanie zadania i założeń szczegółowych:
 
-Plan: Projektowanie interfejsu użytkownika:
+Określenie celu aplikacji: stworzenie symulatora stanowiska dyspozytorskiego, który monitoruje proces produkcyjny oraz aktywność operatora.
+Wybór parametrów do monitorowania: temperatura procesora, obciążenie procesora, prędkość wentylatorów itp.
+Symulacja procesu produkcyjnego: generowanie losowych wartości parametrów oraz obsługa losowych awarii i przekroczeń granicznych wartości.
+Opis przyjętych rozwiązań programowych:
 
-Dodaj formularze dla każdego testu oraz formularz podsumowania wyników.
-Na każdym formularzu umieść odpowiednie kontrolki do wyświetlania informacji o teście oraz do interakcji z użytkownikiem (np. przyciski, etykiety, pola tekstowe).
-Skonfiguruj interfejs tak, aby był czytelny i intuicyjny dla użytkownika.
-Implementacja logiki aplikacji:
+Stworzenie interfejsu użytkownika z wykorzystaniem Windows Forms, który będzie zawierał okno logowania oraz panel monitorujący.
+Implementacja mechanizmu autodiagnostycznego: okresowe sprawdzanie aktywności operatora poprzez wciśnięcie klawisza.
+Symulacja parametrów procesu produkcyjnego: wykorzystanie generatora liczb losowych do generowania wartości parametrów.
+Obsługa awarii i przekroczeń granicznych wartości: w zależności od sytuacji wyświetlanie odpowiednich komunikatów oraz podejmowanie odpowiednich działań (np. uruchomienie alarmu, zmiana prędkości wentylatorów).
+Logowanie zdarzeń i komunikatów dla operatora.Sformułowanie zadania i założeń szczegółowych:
 
-Stwórz klasy odpowiadające za przeprowadzanie poszczególnych testów (np. testy optyczne, akustyczne).
-Każda klasa testu powinna zawierać metody do rozpoczęcia testu, pomiaru czasu reakcji, zakończenia testu oraz przetwarzania wyników.
-Utwórz klasę odpowiedzialną za analizę i prezentację wyników, która będzie używana do wygenerowania raportu po zakończeniu wszystkich testów.
-Implementacja funkcji pomiaru czasu:
+Określenie celu aplikacji: stworzenie symulatora stanowiska dyspozytorskiego, który monitoruje proces produkcyjny oraz aktywność operatora.
+Wybór parametrów do monitorowania: temperatura procesora, obciążenie procesora, prędkość wentylatorów itp.
+Symulacja procesu produkcyjnego: generowanie losowych wartości parametrów oraz obsługa losowych awarii i przekroczeń granicznych wartości.
+Opis przyjętych rozwiązań programowych:
 
-Wykorzystaj funkcje zegara systemowego lub funkcje biblioteki .NET do pomiaru czasu reakcji użytkownika.
-Zadbaj o precyzję pomiaru i odpowiednie zarządzanie czasem w aplikacji.
-Interakcja z użytkownikiem:
+Stworzenie interfejsu użytkownika z wykorzystaniem Windows Forms, który będzie zawierał okno logowania oraz panel monitorujący.
+Implementacja mechanizmu autodiagnostycznego: okresowe sprawdzanie aktywności operatora poprzez wciśnięcie klawisza.
+Symulacja parametrów procesu produkcyjnego: wykorzystanie generatora liczb losowych do generowania wartości parametrów.
+Obsługa awarii i przekroczeń granicznych wartości: w zależności od sytuacji wyświetlanie odpowiednich komunikatów oraz podejmowanie odpowiednich działań (np. uruchomienie alarmu, zmiana prędkości wentylatorów).
+Logowanie zdarzeń i komunikatów dla operatora.
 
-Obsłuż interakcję użytkownika z interfejsem aplikacji.
-Wprowadź mechanizmy zabezpieczające przed nieprawidłowymi działaniami użytkownika (np. unikanie wielokrotnego klikania przycisków).
-Testowanie i debugowanie:
+Cel aplikacji:
+Stworzenie aplikacji symulującej stanowisko dyspozytorskie, które ma za zadanie monitorować proces produkcyjny oraz aktywność operatora. Aplikacja ma na celu symulowanie rzeczywistych warunków pracy na stanowisku dyspozytorskim, gdzie operator jest odpowiedzialny za nadzór nad procesem produkcyjnym i podejmowanie odpowiednich działań w przypadku awarii lub przekroczenia granicznych wartości parametrów.
 
-Przetestuj każdą część aplikacji, upewniając się, że działa zgodnie z oczekiwaniami.
-Debuguj błędy i wprowadź ewentualne poprawki.
-Dodatkowe funkcjonalności:
+Parametry do monitorowania:
 
-Dodaj funkcje raportowania wyników w formie syntetycznej i analitycznej, wykorzystując wartości liczbowe i reprezentacje graficzne (np. wykresy).
-Możesz także dodać funkcje zapisu i odczytu wyników z pliku lub bazy danych dla późniejszej analizy.
+Temperatura procesora: Monitorowanie temperatury rdzenia procesora w celu zapobiegania przegrzaniu.
+Obciążenie procesora: Śledzenie obciążenia procesora w celu monitorowania wydajności systemu.
+Prędkość wentylatorów: Monitorowanie prędkości obrotowych wentylatorów w celu zapewnienia odpowiedniego chłodzenia.
+Symulacja procesu produkcyjnego:
 
-Zalecane Testy :
+Generowanie losowych wartości parametrów: Wykorzystanie generatora liczb losowych do symulowania różnych parametrów procesu produkcyjnego, takich jak temperatura, obciążenie itp.
+Obsługa awarii i przekroczeń granicznych wartości: Implementacja mechanizmów symulujących losowe awarie oraz przekroczenia granicznych wartości parametrów. Na przykład, symulacja przegrzania procesora lub nagłego wzrostu obciążenia, co wymagać będzie odpowiedniej reakcji ze strony operatora.
+Obsługa awarii i przekroczeń granicznych wartości:
 
-Testy reakcji:
-
-Test reakcji na światło: Kierowca musi nacisnąć przycisk po zaświeceniu światła, symulując reakcję na zmianę sygnalizacji świetlnej.
-Test reakcji na dźwięk: Kierowca musi zareagować na dźwięk syreny lub klaksonu poprzez naciśnięcie przycisku.
-Testy percepcji:
-
-Test rozpoznawania znaków drogowych: Kierowca musi szybko zidentyfikować i odpowiedzieć na wyświetlany znak drogowy.
-Test śledzenia ruchu: Kierowca musi śledzić poruszający się obiekt na ekranie i szybko reagować na zmiany.
-Testy koordynacji ręka-oko:
-
-Test precyzyjności: Kierowca musi manewrować pojazdem, aby uniknąć przeszkód na drodze.
-Test skupienia uwagi: Kierowca musi jednocześnie śledzić kilka obiektów na ekranie i podejmować szybkie decyzje.
-Testy wytrzymałości:
-
-Test długotrwałej uwagi: Kierowca musi utrzymać wysoki poziom koncentracji przez określony czas podczas symulacji długiej podróży.
-Test reakcji na zmęczenie: Kierowca musi odpowiedzieć na sygnały zmęczenia, np. przez naciśnięcie przycisku w odpowiednim momencie.
-Testy radzenia sobie w sytuacjach kryzysowych:
-
-Symulacja hamowania awaryjnego: Kierowca musi jak najszybciej zareagować na sytuację, w której nagle pojawia się przeszkoda na drodze.
-Test radzenia sobie w warunkach pogorszonych: Kierowca musi poradzić sobie z trudnymi warunkami drogowymi, takimi jak deszcz, mgła lub śliska nawierzchnia.
-Testy oceny ryzyka:
-
-Test podejmowania decyzji: Kierowca musi ocenić sytuację na drodze i podjąć właściwą decyzję, np. dotyczącą wyprzedzania lub zmiany pasa ruchu.
-Test przewidywania: Kierowca musi przewidzieć zachowanie innych uczestników ruchu i dostosować swoje działania odpowiednio.
+Komunikaty i ostrzeżenia: Wyświetlanie odpowiednich komunikatów i ostrzeżeń w przypadku wykrycia awarii lub przekroczenia granicznych wartości parametrów.
+Działania operatora: Zapewnienie interakcji z operatorem poprzez umożliwienie mu podejmowania działań w celu rozwiązania problemu, na przykład zmiana prędkości wentylatorów lub zatrzymanie procesu produkcyjnego.
