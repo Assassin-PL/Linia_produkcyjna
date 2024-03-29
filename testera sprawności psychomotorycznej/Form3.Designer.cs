@@ -2,7 +2,7 @@
 
 namespace testera_sprawności_psychomotorycznej
 {
-    partial class Testy
+    partial class Monitoring
     {
         /// <summary>
         /// Required designer variable.
@@ -91,7 +91,7 @@ namespace testera_sprawności_psychomotorycznej
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Moje wyniki";
+            this.button2.Text = "Komunikaty";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -174,14 +174,14 @@ namespace testera_sprawności_psychomotorycznej
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // Testy
+            // Monitoring
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1009, 600);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "Testy";
-            this.Text = "Okno z testami";
+            this.Name = "Monitoring";
+            this.Text = "Panel Monitorowania";
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

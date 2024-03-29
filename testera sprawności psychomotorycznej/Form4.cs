@@ -17,7 +17,7 @@ namespace testera_sprawności_psychomotorycznej
             InitializeComponent();
         }
 
-        public OknoInfo(Testy OknGl, String TekstInfo)
+        public OknoInfo(Monitoring OknGl, String TekstInfo)
         {
             InitializeComponent();
             OknoGl = OknGl;

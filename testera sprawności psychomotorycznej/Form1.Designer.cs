@@ -10,7 +10,7 @@ namespace testera_sprawności_psychomotorycznej
         /// </summary>
         private System.ComponentModel.IContainer components = null;
         private Ustawienia ustawienia_okno;
-        private Testy testy_okno;
+        private Monitoring testy_okno;
         private int currentImageIndex = 0;
         public int backgroundID = 0;
         public List<Image> backgroundList = new List<Image>
@@ -67,7 +67,7 @@ namespace testera_sprawności_psychomotorycznej
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.617F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.383F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 223F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 224F));
             this.tableLayoutPanel1.Controls.Add(this.button3, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.button2, 2, 2);
@@ -94,7 +94,7 @@ namespace testera_sprawności_psychomotorycznej
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(149, 105);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Zbior Wynikow";
+            this.button3.Text = "Komunikaty ";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
@@ -103,7 +103,7 @@ namespace testera_sprawności_psychomotorycznej
             this.pictureBox1.Image = global::testera_sprawności_psychomotorycznej.Properties.Resources.janusz;
             this.pictureBox1.Location = new System.Drawing.Point(281, 147);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(625, 325);
+            this.pictureBox1.Size = new System.Drawing.Size(624, 325);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -126,7 +126,7 @@ namespace testera_sprawności_psychomotorycznej
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(145, 63);
             this.button6.TabIndex = 6;
-            this.button6.Text = "Pomoc";
+            this.button6.Text = "Zaloguj sie do Panelu";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -175,7 +175,7 @@ namespace testera_sprawności_psychomotorycznej
             // button5
             // 
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button5.Location = new System.Drawing.Point(946, 252);
+            this.button5.Location = new System.Drawing.Point(945, 252);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(150, 114);
             this.button5.TabIndex = 5;
@@ -197,7 +197,7 @@ namespace testera_sprawności_psychomotorycznej
             this.ClientSize = new System.Drawing.Size(1133, 616);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Glowny_Program";
-            this.Text = "Tester Glowne";
+            this.Text = "Menu Nawigacyjne";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

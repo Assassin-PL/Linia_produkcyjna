@@ -7,7 +7,7 @@ namespace testera_sprawności_psychomotorycznej
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private Testy OknoGl;
+        private Monitoring OknoGl;
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>

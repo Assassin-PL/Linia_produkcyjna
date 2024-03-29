@@ -111,7 +111,7 @@ namespace testera_sprawności_psychomotorycznej.Properties {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu https://www.gov.pl/web/gov/kategorie-prawa-jazdy.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu https://github.com/Assassin-PL/Linia_produkcyjna.
         /// </summary>
         internal static string url {
             get {

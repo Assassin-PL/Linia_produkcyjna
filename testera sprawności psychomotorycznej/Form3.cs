@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace testera_sprawności_psychomotorycznej
 {
-    public partial class Testy : Form
+    public partial class Monitoring : Form
     {
-        public Testy(Glowny_Program OknoRodzic1)
+        public Monitoring(Glowny_Program OknoRodzic1)
         {
             InitializeComponent();
             this.tableLayoutPanel1.BackgroundImage = OknoRodzic1.tableLayoutPanel1.BackgroundImage;

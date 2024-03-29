@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.34301.259
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testera sprawności psychomotorycznej", "testera sprawności psychomotorycznej\testera sprawności psychomotorycznej.csproj", "{73F6FD2A-DEA8-4AEA-85B8-210C5DA988C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linia Produkcyjna", "testera sprawności psychomotorycznej\Linia Produkcyjna.csproj", "{73F6FD2A-DEA8-4AEA-85B8-210C5DA988C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
