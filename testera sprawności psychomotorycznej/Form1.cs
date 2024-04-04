@@ -20,10 +20,10 @@ namespace testera_sprawności_psychomotorycznej
             this.pictureBox1.Image = Properties.Resources.janusz;
             this.pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             this.tableLayoutPanel1.BackgroundImage = backgroundList[backgroundID];
-            this.label1.BackColor = Color.Transparent;
             this.label2.BackColor = Color.Transparent;
             button1.BackColor = System.Drawing.Color.Green; // Domyślny kolor tła
             PropertyChanged += MainForm_PropertyChanged;
+            this.pictureBox1.BackColor = Color.Transparent;
         }
 
         private void MainForm_PropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -76,11 +76,6 @@ namespace testera_sprawności_psychomotorycznej
             ustawienia_okno.Owner = this;
             this.ustawienia_okno.ShowDialog();
 
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Process.Start(Properties.Resources.url);
         }
 
         private void button1_Click(object sender, EventArgs e)

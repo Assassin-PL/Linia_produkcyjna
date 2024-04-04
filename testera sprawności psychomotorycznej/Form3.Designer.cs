@@ -13,6 +13,7 @@ namespace testera_sprawności_psychomotorycznej
         private Color KolorTla_2;
         private Color KolorTla_3;
         private OknoInfo OknoHelp;
+        private bool zatrzask = false;
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -53,8 +54,8 @@ namespace testera_sprawności_psychomotorycznej
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.61039F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.38961F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.5F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 248F));
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
@@ -69,17 +70,18 @@ namespace testera_sprawności_psychomotorycznej
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.96227F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.03773F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 122F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.06289F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.9371F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 71F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1009, 600);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // button1
             // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(241, 47);
             this.button1.TabIndex = 0;
             this.button1.Text = "Test 1";
             this.button1.UseVisualStyleBackColor = true;
@@ -89,9 +91,10 @@ namespace testera_sprawności_psychomotorycznej
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(304, 3);
+            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button2.Location = new System.Drawing.Point(250, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(507, 47);
             this.button2.TabIndex = 1;
             this.button2.Text = "Komunikaty";
             this.button2.UseVisualStyleBackColor = true;
@@ -99,9 +102,10 @@ namespace testera_sprawności_psychomotorycznej
             // 
             // button3
             // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Location = new System.Drawing.Point(763, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(243, 47);
             this.button3.TabIndex = 2;
             this.button3.Text = "Test 4";
             this.button3.UseVisualStyleBackColor = true;
@@ -111,7 +115,8 @@ namespace testera_sprawności_psychomotorycznej
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(3, 165);
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button4.Location = new System.Drawing.Point(86, 279);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 3;
@@ -123,7 +128,8 @@ namespace testera_sprawności_psychomotorycznej
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(763, 165);
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button5.Location = new System.Drawing.Point(847, 279);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 4;
@@ -135,9 +141,10 @@ namespace testera_sprawności_psychomotorycznej
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(3, 480);
+            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button6.Location = new System.Drawing.Point(3, 531);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(241, 66);
             this.button6.TabIndex = 5;
             this.button6.Text = "Test 3";
             this.button6.UseVisualStyleBackColor = true;
@@ -147,9 +154,10 @@ namespace testera_sprawności_psychomotorycznej
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(304, 480);
+            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button7.Location = new System.Drawing.Point(250, 531);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.Size = new System.Drawing.Size(507, 66);
             this.button7.TabIndex = 6;
             this.button7.Text = "Powrot";
             this.button7.UseVisualStyleBackColor = true;
@@ -157,9 +165,10 @@ namespace testera_sprawności_psychomotorycznej
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(763, 480);
+            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button8.Location = new System.Drawing.Point(763, 531);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.Size = new System.Drawing.Size(243, 66);
             this.button8.TabIndex = 7;
             this.button8.Text = "Test 6";
             this.button8.UseVisualStyleBackColor = true;
@@ -170,9 +179,9 @@ namespace testera_sprawności_psychomotorycznej
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(304, 165);
+            this.pictureBox1.Location = new System.Drawing.Point(250, 56);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(453, 309);
+            this.pictureBox1.Size = new System.Drawing.Size(507, 469);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 

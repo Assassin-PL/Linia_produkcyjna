@@ -136,5 +136,15 @@ namespace testera_sprawności_psychomotorycznej.Properties {
                 return ResourceManager.GetString("url", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wentylator {
+            get {
+                object obj = ResourceManager.GetObject("wentylator", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -17,13 +17,16 @@ namespace testera_sprawności_psychomotorycznej
             InitializeComponent();
             this.tableLayoutPanel1.BackgroundImage = OknoRodzic1.tableLayoutPanel1.BackgroundImage;
             this.OknoRodzic1 = OknoRodzic1;
-            this.pictureBox1.Image = OknoRodzic1.pictureBox1.Image;
+            //this.pictureBox1.Image = OknoRodzic1.pictureBox1.Image;
+            this.pictureBox1.Image = Properties.Resources.wentylator;
             this.pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            this.pictureBox1.BackColor = Color.Transparent;
             this.timer_diag.Enabled = true;
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
+            this.timer_diag.Enabled = false;
             this.Hide(); // Ukryj okno dialogowe
             OknoRodzic1.Show(); // Pokaż główne okno
         }
@@ -123,7 +126,15 @@ namespace testera_sprawności_psychomotorycznej
 
         private void timer_diag_Tick(object sender, EventArgs e)
         {
-            MessageBox.Show("Timer aktywowany!", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+            if(this.zatrzask)
+            {
+                this.button2.BackColor = Color.Red;
+            }
+            else
+            {
+                this.button2.BackColor = Color.Green;
+            }
+            this.zatrzask = !this.zatrzask;
         }
     }
 }
