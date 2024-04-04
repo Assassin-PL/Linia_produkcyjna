@@ -117,29 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bananki" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bananki.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ciemne_banany" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ciemne_banany.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="janusz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\janusz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kalach" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kalach.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maupka" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maupka.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Prawidlowe_Haslo" xml:space="preserve">
-    <value>Banan</value>
-  </data>
-  <data name="Prawidlowy_Login" xml:space="preserve">
-    <value>Maupka</value>
-  </data>
-  <data name="url" xml:space="preserve">
-    <value>https://github.com/Assassin-PL/Linia_produkcyjna</value>
-  </data>
 </root>

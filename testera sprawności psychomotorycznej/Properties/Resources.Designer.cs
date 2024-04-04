@@ -111,6 +111,24 @@ namespace testera_sprawności_psychomotorycznej.Properties {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Banan.
+        /// </summary>
+        internal static string Prawidlowe_Haslo {
+            get {
+                return ResourceManager.GetString("Prawidlowe_Haslo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Maupka.
+        /// </summary>
+        internal static string Prawidlowy_Login {
+            get {
+                return ResourceManager.GetString("Prawidlowy_Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu https://github.com/Assassin-PL/Linia_produkcyjna.
         /// </summary>
         internal static string url {

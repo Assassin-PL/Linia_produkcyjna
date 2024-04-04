@@ -20,11 +20,37 @@ namespace testera_sprawności_psychomotorycznej
             this.pictureBox1.Image = Properties.Resources.janusz;
             this.pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             this.tableLayoutPanel1.BackgroundImage = backgroundList[backgroundID];
+            this.label1.BackColor = Color.Transparent;
+            this.label2.BackColor = Color.Transparent;
+            button1.BackColor = System.Drawing.Color.Green; // Domyślny kolor tła
+            PropertyChanged += MainForm_PropertyChanged;
+        }
+
+        private void MainForm_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            // Sprawdzenie, czy zmieniła się wartość Czy_zalogowano
+            if (e.PropertyName == nameof(Czy_zalogowano))
+            {
+                // Zmiana koloru tła przycisku w zależności od wartości Czy_zalogowano
+                if (Czy_zalogowano)
+                {
+                    button1.BackColor = System.Drawing.Color.Red; // Zmiana koloru tła na czerwony
+                }
+                else
+                {
+                    button1.BackColor = System.Drawing.Color.Green; // Zmiana koloru tła na zielony
+                }
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -65,5 +91,14 @@ namespace testera_sprawności_psychomotorycznej
             this.testy_okno.ShowDialog();
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.okno_do_logowania = new Login(this);
+            okno_do_logowania.Owner = this;
+            this.okno_do_logowania.ShowDialog();
+        }
+
+
     }
 }

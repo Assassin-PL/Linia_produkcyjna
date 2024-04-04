@@ -19,6 +19,7 @@ namespace testera_sprawności_psychomotorycznej
             this.OknoRodzic1 = OknoRodzic1;
             this.pictureBox1.Image = OknoRodzic1.pictureBox1.Image;
             this.pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            this.timer_diag.Enabled = true;
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -118,6 +119,11 @@ namespace testera_sprawności_psychomotorycznej
         private void button8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer_diag_Tick(object sender, EventArgs e)
+        {
+            MessageBox.Show("Timer aktywowany!", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information); 
         }
     }
 }

@@ -28,5 +28,10 @@ namespace testera_sprawności_psychomotorycznej
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
