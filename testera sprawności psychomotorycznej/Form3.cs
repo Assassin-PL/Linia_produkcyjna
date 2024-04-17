@@ -129,6 +129,9 @@ namespace testera_sprawności_psychomotorycznej
             if(this.zatrzask)
             {
                 this.button2.BackColor = Color.Red;
+                this.Okno_wyskakujace = new Response(this);
+                this.Okno_wyskakujace.Owner = this;
+                this.Okno_wyskakujace.ShowDialog();
             }
             else
             {

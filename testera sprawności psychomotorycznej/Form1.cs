@@ -80,11 +80,15 @@ namespace testera_sprawności_psychomotorycznej
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            this.testy_okno = new Monitoring(this);
-            testy_okno.Owner = this;
-            this.testy_okno.ShowDialog();
-
+            if(this.czyZalogowano == true)
+            {
+                this.Hide();
+                this.testy_okno = new Monitoring(this);
+                testy_okno.Owner = this;
+                this.testy_okno.timer_diag.Start();
+                this.testy_okno.ShowDialog();
+            }
+            else MessageBox.Show("Wprowadzono nieprawidłowe dane.", "Uzytkownik musi byc zalogowany", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void button6_Click(object sender, EventArgs e)

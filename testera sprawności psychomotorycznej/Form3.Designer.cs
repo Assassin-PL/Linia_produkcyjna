@@ -8,7 +8,8 @@ namespace testera_sprawności_psychomotorycznej
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        Glowny_Program OknoRodzic1;
+        public Glowny_Program OknoRodzic1;
+        public Response Okno_wyskakujace;
         private Color KolorTla_1;
         private Color KolorTla_2;
         private Color KolorTla_3;
@@ -205,8 +206,6 @@ namespace testera_sprawności_psychomotorycznej
         }
 
         #endregion
-
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -216,6 +215,7 @@ namespace testera_sprawności_psychomotorycznej
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Timer timer_diag;
+        public System.Windows.Forms.Timer timer_diag;
+        public System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

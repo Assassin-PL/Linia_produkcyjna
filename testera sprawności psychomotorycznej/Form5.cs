@@ -90,7 +90,7 @@ namespace testera_sprawności_psychomotorycznej
                     this.login == Properties.Resources.Prawidlowy_Login
                     )
                 {
-                    if (OknoRodzic != null) OknoRodzic.Czy_zalogowano = !OknoRodzic.Czy_zalogowano;
+                    if (OknoRodzic != null) OknoRodzic.Czy_zalogowano = true;
                     this.Close();
                 }
                 else
