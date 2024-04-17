@@ -20,6 +20,8 @@ namespace testera_sprawności_psychomotorycznej
         public Response(Monitoring Przeslane_okno)
         {
             InitializeComponent();
+            this.timer1.Enabled = true;
+            this.timer1.Start();
             this.OknoGl = Przeslane_okno;
             this.OknoGl.timer_diag.Stop();
             this.FormClosed += this.Response_FormClosed;
@@ -59,12 +61,23 @@ namespace testera_sprawności_psychomotorycznej
             }
             else
             {
-                this.OknoGl.Hide();
-                this.OknoGl.OknoRodzic1.Czy_zalogowano = false;
-                this.OknoGl.OknoRodzic1.Show();
-                this.OknoGl.timer_diag.Stop();
-                this.Close();
+                this.zamkniecie();
             }
+        }
+
+        private void zamkniecie()
+        {
+            this.timer1.Stop();
+            this.OknoGl.Hide();
+            this.OknoGl.OknoRodzic1.Czy_zalogowano = false;
+            this.OknoGl.OknoRodzic1.Show();
+            this.OknoGl.timer_diag.Stop();
+            this.Close();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.zamkniecie();
         }
     }
 }
