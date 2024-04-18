@@ -26,6 +26,8 @@ namespace testera_sprawności_psychomotorycznej
             InitializeComponent();
             this.tableLayoutPanel1.BackgroundImage = OknoRodzic.tableLayoutPanel1.BackgroundImage;
             this.OknoRodzic = OknoRodzic;
+            this.label1.BackColor = Color.Transparent;
+            this.label2.BackColor = Color.Transparent;
 
             textBox1.KeyPress += new KeyPressEventHandler(textBox1_KeyPress);
 

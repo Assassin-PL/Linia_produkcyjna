@@ -10,6 +10,7 @@ namespace testera_sprawności_psychomotorycznej
         private System.ComponentModel.IContainer components = null;
         public Glowny_Program OknoRodzic1;
         public Response Okno_wyskakujace;
+        public Event_Form Okno_komunikatow;
         private Color KolorTla_1;
         private Color KolorTla_2;
         private Color KolorTla_3;

@@ -33,7 +33,9 @@ namespace testera_sprawności_psychomotorycznej
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Okno_komunikatow = new Event_Form(this);
+            this.Okno_komunikatow.Owner = this;
+            this.Okno_komunikatow.ShowDialog();
         }
 
         private void Przycisk_MouseHover(object sender, EventArgs e)
