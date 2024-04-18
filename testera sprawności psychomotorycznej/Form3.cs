@@ -139,5 +139,17 @@ namespace testera_sprawności_psychomotorycznej
             }
             this.zatrzask = !this.zatrzask;
         }
+
+        public void ResetTimer(Timer timer)
+        {
+            // Zatrzymaj timer
+            timer.Stop();
+
+            // Zresetuj wartość licznika czasu do zera
+            timer.Interval = 0;
+
+            // Uruchom timer ponownie
+            timer.Start();
+        }
     }
 }

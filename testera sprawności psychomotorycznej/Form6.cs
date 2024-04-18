@@ -56,6 +56,7 @@ namespace testera_sprawności_psychomotorycznej
         {
             if (e.KeyChar == this.randomChar)
             {
+                this.timer1.Stop();
                 this.OknoGl.timer_diag.Start();
                 this.Close();
             }
@@ -72,6 +73,7 @@ namespace testera_sprawności_psychomotorycznej
             this.OknoGl.OknoRodzic1.Czy_zalogowano = false;
             this.OknoGl.OknoRodzic1.Show();
             this.OknoGl.timer_diag.Stop();
+            this.timer1.Enabled = false;
             this.Close();
         }
 

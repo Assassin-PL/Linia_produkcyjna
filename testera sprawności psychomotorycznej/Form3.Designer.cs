@@ -188,7 +188,7 @@ namespace testera_sprawności_psychomotorycznej
             // 
             // timer_diag
             // 
-            this.timer_diag.Interval = 3000;
+            this.timer_diag.Interval = 4000;
             this.timer_diag.Tick += new System.EventHandler(this.timer_diag_Tick);
             // 
             // Monitoring
