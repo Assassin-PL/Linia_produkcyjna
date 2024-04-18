@@ -196,6 +196,7 @@ namespace testera_sprawności_psychomotorycznej
             // 
             // symulacja_czasomierz
             // 
+            this.symulacja_czasomierz.Interval = 500;
             this.symulacja_czasomierz.Tick += new System.EventHandler(this.symulacja_czasomierz_Tick);
             // 
             // Monitoring

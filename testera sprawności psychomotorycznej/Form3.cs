@@ -168,11 +168,17 @@ namespace testera_sprawności_psychomotorycznej
 
             if (Okno_komunikatow != null)
             {
-                Symulacja.OnTimerElapsed();
-                Okno_komunikatow.label1.Text = Symulacja.TemperatureStatus;
-                Okno_komunikatow.label2.Text = Symulacja.UsageStatus;
-                Okno_komunikatow.label3.Text = Symulacja.FanSpeedStatus;
-                Okno_komunikatow.label4.Text = Symulacja.OilLevelStatus;
+                this.Symulacja.OnTimerElapsed();
+                this.Okno_komunikatow.label1.Text = this.Symulacja.TemperatureStatus;
+                this.Okno_komunikatow.label2.Text = this.Symulacja.UsageStatus;
+                this.Okno_komunikatow.label3.Text = this.Symulacja.FanSpeedStatus;
+                this.Okno_komunikatow.label4.Text = this.Symulacja.OilLevelStatus;
+                this.Okno_komunikatow.label1.BackColor = Color.Transparent;
+                this.Okno_komunikatow.label2.BackColor = Color.Transparent;
+                this.Okno_komunikatow.label3.BackColor = Color.Transparent;
+                this.Okno_komunikatow.label4.BackColor = Color.Transparent;
+                this.Okno_komunikatow.tableLayoutPanel1.BackgroundImage = this.BackgroundImage;
+
             }
 
         }

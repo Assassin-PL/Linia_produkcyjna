@@ -53,7 +53,7 @@ namespace testera_sprawności_psychomotorycznej
         {
             ProcessorTemperature += _random.NextDouble() * 4 - 2;
             ProcessorUsage += _random.NextDouble() * 10 - 5;
-            FanSpeed += _random.Next(100) - 50;
+            FanSpeed += _random.Next(100) + 50;
             OilLevel += _random.NextDouble() * 10 - 5;
             HydraulicPressure += _random.NextDouble() * 20 - 10;
 
