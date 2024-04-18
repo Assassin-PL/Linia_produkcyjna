@@ -72,6 +72,7 @@ namespace testera_sprawności_psychomotorycznej
             this.OknoGl.Hide();
             this.OknoGl.OknoRodzic1.Czy_zalogowano = false;
             this.OknoGl.OknoRodzic1.Show();
+            this.OknoGl.Okno_komunikatow.Close();
             this.OknoGl.timer_diag.Stop();
             this.timer1.Enabled = false;
             this.Close();

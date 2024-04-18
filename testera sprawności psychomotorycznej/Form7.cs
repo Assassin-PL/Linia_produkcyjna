@@ -26,6 +26,18 @@ namespace testera_sprawności_psychomotorycznej
             this.label2.BackColor = Color.Transparent;
             this.label3.BackColor = Color.Transparent;
             this.label4.BackColor = Color.Transparent;
+            this.pictureBox1.Image = Properties.Resources.silin_caly;
+            this.pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            this.pictureBox1.BackColor = Color.Transparent;
+            this.pictureBox2.Image = Properties.Resources.zawory_caly;
+            this.pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            this.pictureBox2.BackColor = Color.Transparent;
+            this.pictureBox3.Image = Properties.Resources.bez_ognia;
+            this.pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            this.pictureBox3.BackColor = Color.Transparent;
+            this.pictureBox4.Image = Properties.Resources.hala;
+            this.pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            this.pictureBox4.BackColor = Color.Transparent;
 
         }
 

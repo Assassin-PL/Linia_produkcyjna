@@ -32,8 +32,8 @@ namespace testera_sprawności_psychomotorycznej
         }
         public List<Image> backgroundList = new List<Image>
             {
-                Properties.Resources.bananki,
-                Properties.Resources.ciemne_banany,
+                Properties.Resources.hala,
+                Properties.Resources.fabryka_noc,
             };
         private List<Image> imagesList = new List<Image>
             {

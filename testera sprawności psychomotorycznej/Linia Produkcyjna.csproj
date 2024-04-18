@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +152,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wentylator.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maszyna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silnik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hydraulika.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\olej.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zawory_caly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bez_ognia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silin_caly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fabryka_noc .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guziki.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

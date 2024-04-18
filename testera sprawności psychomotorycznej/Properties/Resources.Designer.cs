@@ -73,9 +73,59 @@ namespace testera_sprawności_psychomotorycznej.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bez_ognia {
+            get {
+                object obj = ResourceManager.GetObject("bez_ognia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ciemne_banany {
             get {
                 object obj = ResourceManager.GetObject("ciemne_banany", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fabryka_noc {
+            get {
+                object obj = ResourceManager.GetObject("fabryka_noc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap guziki {
+            get {
+                object obj = ResourceManager.GetObject("guziki", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hala {
+            get {
+                object obj = ResourceManager.GetObject("hala", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hydraulika {
+            get {
+                object obj = ResourceManager.GetObject("hydraulika", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -111,6 +161,26 @@ namespace testera_sprawności_psychomotorycznej.Properties {
         }
         
         /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ogien {
+            get {
+                object obj = ResourceManager.GetObject("ogien", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap olej {
+            get {
+                object obj = ResourceManager.GetObject("olej", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Banan.
         /// </summary>
         internal static string Prawidlowe_Haslo {
@@ -129,6 +199,26 @@ namespace testera_sprawności_psychomotorycznej.Properties {
         }
         
         /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap silin_caly {
+            get {
+                object obj = ResourceManager.GetObject("silin_caly", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap silnik {
+            get {
+                object obj = ResourceManager.GetObject("silnik", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu https://github.com/Assassin-PL/Linia_produkcyjna.
         /// </summary>
         internal static string url {
@@ -143,6 +233,16 @@ namespace testera_sprawności_psychomotorycznej.Properties {
         internal static System.Drawing.Bitmap wentylator {
             get {
                 object obj = ResourceManager.GetObject("wentylator", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zawory_caly {
+            get {
+                object obj = ResourceManager.GetObject("zawory_caly", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

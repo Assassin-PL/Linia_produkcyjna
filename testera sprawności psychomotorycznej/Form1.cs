@@ -17,7 +17,7 @@ namespace testera_sprawności_psychomotorycznej
         public Glowny_Program()
         {
             InitializeComponent();
-            this.pictureBox1.Image = Properties.Resources.janusz;
+            this.pictureBox1.Image = Properties.Resources.hala;
             this.pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             this.tableLayoutPanel1.BackgroundImage = backgroundList[backgroundID];
             this.label2.BackColor = Color.Transparent;

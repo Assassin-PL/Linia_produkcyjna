@@ -121,8 +121,23 @@
   <data name="bananki" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bananki.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bez_ognia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bez_ognia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ciemne_banany" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ciemne_banany.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fabryka_noc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fabryka_noc .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guziki" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guziki.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hala" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hala.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hydraulika" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hydraulika.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="janusz" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\janusz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,16 +148,31 @@
   <data name="maupka" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maupka.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ogien" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ogien.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="olej" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\olej.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Prawidlowe_Haslo" xml:space="preserve">
     <value>Banan</value>
   </data>
   <data name="Prawidlowy_Login" xml:space="preserve">
     <value>Maupka</value>
   </data>
+  <data name="silin_caly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\silin_caly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="silnik" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\silnik.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="url" xml:space="preserve">
     <value>https://github.com/Assassin-PL/Linia_produkcyjna</value>
   </data>
   <data name="wentylator" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wentylator.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zawory_caly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zawory_caly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

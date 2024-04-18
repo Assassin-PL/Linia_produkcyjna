@@ -18,10 +18,13 @@ namespace testera_sprawności_psychomotorycznej
             this.tableLayoutPanel1.BackgroundImage = OknoRodzic1.tableLayoutPanel1.BackgroundImage;
             this.OknoRodzic1 = OknoRodzic1;
             //this.pictureBox1.Image = OknoRodzic1.pictureBox1.Image;
-            this.pictureBox1.Image = Properties.Resources.wentylator;
+            this.pictureBox1.Image = Properties.Resources.guziki;
             this.pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             this.pictureBox1.BackColor = Color.Transparent;
             this.timer_diag.Enabled = true;
+            this.Symulacja = new ProductionLineSimulator();
+            this.symulacja_czasomierz.Enabled = true;
+            this.symulacja_czasomierz.Start();
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -35,7 +38,7 @@ namespace testera_sprawności_psychomotorycznej
         {
             this.Okno_komunikatow = new Event_Form(this);
             this.Okno_komunikatow.Owner = this;
-            this.Okno_komunikatow.ShowDialog();
+            this.Okno_komunikatow.Show();
         }
 
         private void Przycisk_MouseHover(object sender, EventArgs e)
@@ -130,14 +133,9 @@ namespace testera_sprawności_psychomotorycznej
         {
             if(this.zatrzask)
             {
-                this.button2.BackColor = Color.Red;
                 this.Okno_wyskakujace = new Response(this);
                 this.Okno_wyskakujace.Owner = this;
                 this.Okno_wyskakujace.ShowDialog();
-            }
-            else
-            {
-                this.button2.BackColor = Color.Green;
             }
             this.zatrzask = !this.zatrzask;
         }
@@ -152,6 +150,31 @@ namespace testera_sprawności_psychomotorycznej
 
             // Uruchom timer ponownie
             timer.Start();
+        }
+
+        private void symulacja_czasomierz_Tick(object sender, EventArgs e)
+        {
+            if(Symulacja.IsEngineAlert 
+                || 
+                Symulacja.IsHydraulicAlert 
+                || 
+                Symulacja.IsTemperatureAlert
+                ||
+                Symulacja.IsOilAlert)
+            {
+                this.button2.BackColor = Color.Red;
+            }
+            else this.button2.BackColor = Color.Green;
+
+            if (Okno_komunikatow != null)
+            {
+                Symulacja.OnTimerElapsed();
+                Okno_komunikatow.label1.Text = Symulacja.TemperatureStatus;
+                Okno_komunikatow.label2.Text = Symulacja.UsageStatus;
+                Okno_komunikatow.label3.Text = Symulacja.FanSpeedStatus;
+                Okno_komunikatow.label4.Text = Symulacja.OilLevelStatus;
+            }
+
         }
     }
 }
