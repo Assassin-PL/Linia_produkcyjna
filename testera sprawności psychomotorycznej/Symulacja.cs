@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Timers;
 using System.Management;
 using System.Diagnostics;
+using ILGPU;
+using ILGPU.Runtime;
 
 namespace testera_sprawności_psychomotorycznej
 {
@@ -119,10 +121,10 @@ namespace testera_sprawności_psychomotorycznej
         {
             this._systemMonitor.UpdateSystemMetrics();
 
-            ProcessorTemperature += _random.NextDouble() * 4 - 2;
-            ProcessorUsage += _random.NextDouble() * 10 - 5;
+            ProcessorTemperature += _random.NextDouble() * 4 + (this._systemMonitor.GpuTemperature / 5);
+            ProcessorUsage += _random.NextDouble() * 10 - 5 + 2 * this._systemMonitor.CpuUsage;
             FanSpeed += _random.Next(100) + (this._systemMonitor.FanSpeed / 100);
-            OilLevel += _random.NextDouble() * 10 - 5;
+            OilLevel += _random.NextDouble() * 10 - (this._systemMonitor.RamUsage / 8);
             HydraulicPressure += _random.NextDouble() * 20 - 10;
 
             ProcessorTemperature = Math.Max(0, Math.Min(MaxTemp, ProcessorTemperature));

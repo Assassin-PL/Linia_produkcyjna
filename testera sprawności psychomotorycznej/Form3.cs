@@ -101,12 +101,20 @@ namespace testera_sprawności_psychomotorycznej
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (this.Symulacja.IsHydraulicAlert)
+            {
+                this.button1.BackColor = Color.Green;
+                this.Symulacja.ResetHydraulicAlert();
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            if (this.Symulacja.IsTemperatureAlert)
+            {
+                this.button4.BackColor = Color.Green;
+                this.Symulacja.ResetTemperatureAlert();
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -130,7 +138,11 @@ namespace testera_sprawności_psychomotorycznej
 
         private void button8_Click(object sender, EventArgs e)
         {
-
+            if (this.Symulacja.IsOilAlert)
+            {
+                this.button8.BackColor = Color.Green;
+                this.Symulacja.ResetOilAlert();
+            }
         }
 
         private void timer_diag_Tick(object sender, EventArgs e)
@@ -177,6 +189,33 @@ namespace testera_sprawności_psychomotorycznej
             else
             {
                 this.button3.BackColor = Color.Green;
+            }
+
+            if (Symulacja.IsHydraulicAlert)
+            {
+                this.button1.BackColor = Color.Red;
+            }
+            else
+            {
+                this.button1.BackColor = Color.Green;
+            }
+
+            if (Symulacja.IsTemperatureAlert)
+            {
+                this.button4.BackColor = Color.Red;
+            }
+            else
+            {
+                this.button4.BackColor = Color.Green;
+            }
+
+            if (Symulacja.IsOilAlert)
+            {
+                this.button8.BackColor = Color.Red;
+            }
+            else
+            {
+                this.button8.BackColor = Color.Green;
             }
 
             if (Okno_komunikatow != null)
