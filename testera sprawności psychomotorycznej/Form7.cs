@@ -45,5 +45,10 @@ namespace testera_sprawności_psychomotorycznej
         {
             this.Close();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

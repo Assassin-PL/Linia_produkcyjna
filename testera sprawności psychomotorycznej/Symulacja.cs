@@ -4,12 +4,78 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
+using System.Management;
+using System.Diagnostics;
 
 namespace testera_sprawności_psychomotorycznej
 {
+    public class SystemMonitor
+    {
+        public int FanSpeed { get; private set; }
+        public int GpuTemperature { get; private set; }
+        public int CpuUsage { get; private set; }
+        public int RamUsage { get; private set; }
+
+        public void UpdateSystemMetrics()
+        {
+            FanSpeed = GetFanSpeed();
+            GpuTemperature = GetGpuTemperature();
+            CpuUsage = GetCurrentCpuUsage();
+            RamUsage = GetRamUsage();
+        }
+
+        private int GetFanSpeed()
+        {
+            try
+            {
+                ManagementObjectSearcher searcher = new ManagementObjectSearcher("\\root\\WMI", "SELECT * FROM Win32_Fan");
+                foreach (ManagementObject obj in searcher.Get())
+                {
+                    if (obj["DesiredSpeed"] != null)
+                        return Convert.ToInt32(obj["DesiredSpeed"]);
+                }
+            }
+            catch (Exception e)
+            {
+
+            }
+            return 0;
+        }
+
+        private int GetGpuTemperature()
+        {
+            try
+            {
+                ManagementObjectSearcher searcher = new ManagementObjectSearcher("\\root\\WMI", "SELECT * FROM MSAcpi_ThermalZoneTemperature");
+                foreach (ManagementObject obj in searcher.Get())
+                {
+                    if (obj["CurrentTemperature"] != null)
+                        return Convert.ToInt32(obj["CurrentTemperature"]) / 10 - 273;  // Konwertuj z Kelwinów na stopnie Celsiusza
+                }
+            }
+            catch (Exception e)
+            {
+
+            }
+            return 0;
+        }
+
+        private int GetCurrentCpuUsage()
+        {
+            var cpuCounter = new PerformanceCounter("Processor", "% Processor Time", "_Total");
+            return (int)cpuCounter.NextValue();
+        }
+
+        private int GetRamUsage()
+        {
+            var ramCounter = new PerformanceCounter("Memory", "% Committed Bytes In Use");
+            return (int)ramCounter.NextValue();
+        }
+    }
     public class ProductionLineSimulator
     {
         private Random _random = new Random();
+        private SystemMonitor _systemMonitor = new SystemMonitor(); 
 
         // Parametry symulacji
         public double ProcessorTemperature { get; private set; } = 50;  // temperatura rdzenia procesora w °C
@@ -51,9 +117,11 @@ namespace testera_sprawności_psychomotorycznej
 
         private void SimulateParameters()
         {
+            this._systemMonitor.UpdateSystemMetrics();
+
             ProcessorTemperature += _random.NextDouble() * 4 - 2;
             ProcessorUsage += _random.NextDouble() * 10 - 5;
-            FanSpeed += _random.Next(100) + 50;
+            FanSpeed += _random.Next(100) + (this._systemMonitor.FanSpeed / 100);
             OilLevel += _random.NextDouble() * 10 - 5;
             HydraulicPressure += _random.NextDouble() * 20 - 10;
 

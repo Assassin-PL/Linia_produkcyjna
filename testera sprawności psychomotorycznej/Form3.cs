@@ -116,7 +116,11 @@ namespace testera_sprawności_psychomotorycznej
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            if (this.Symulacja.IsEngineAlert)
+            {
+                this.button3.BackColor = Color.Green;
+                this.Symulacja.ResetEngineAlert();
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -166,6 +170,15 @@ namespace testera_sprawności_psychomotorycznej
             }
             else this.button2.BackColor = Color.Green;
 
+            if(Symulacja.IsEngineAlert)
+            {
+                this.button3.BackColor = Color.Red;
+            }
+            else
+            {
+                this.button3.BackColor = Color.Green;
+            }
+
             if (Okno_komunikatow != null)
             {
                 this.Symulacja.OnTimerElapsed();
@@ -177,10 +190,43 @@ namespace testera_sprawności_psychomotorycznej
                 this.Okno_komunikatow.label2.BackColor = Color.Transparent;
                 this.Okno_komunikatow.label3.BackColor = Color.Transparent;
                 this.Okno_komunikatow.label4.BackColor = Color.Transparent;
-                this.Okno_komunikatow.tableLayoutPanel1.BackgroundImage = this.BackgroundImage;
-
+                this.UpdateUI();
             }
 
+        }
+        private void UpdateControl(Color labelColor, Image image, Label labelControl, PictureBox pictureBox)
+        {
+            labelControl.ForeColor = labelColor;
+            pictureBox.Image = image;
+            pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox.BackColor = Color.Transparent;
+        }
+
+        private void UpdateUI()
+        {
+            UpdateControl(
+                this.Symulacja.IsEngineAlert ? Color.Red : Color.Green,
+                this.Symulacja.IsEngineAlert ? Properties.Resources.ogien : Properties.Resources.bez_ognia,
+                this.Okno_komunikatow.label3,
+                this.Okno_komunikatow.pictureBox3);
+
+            UpdateControl(
+                this.Symulacja.IsHydraulicAlert ? Color.Red : Color.Green,
+                this.Symulacja.IsHydraulicAlert ? Properties.Resources.hydraulika : Properties.Resources.zawory_caly,
+                this.Okno_komunikatow.label2,
+                this.Okno_komunikatow.pictureBox2);
+
+            UpdateControl(
+                this.Symulacja.IsOilAlert ? Color.Red : Color.Green,
+                this.Symulacja.IsOilAlert ? Properties.Resources.olej : Properties.Resources.hala,
+                this.Okno_komunikatow.label4,
+                this.Okno_komunikatow.pictureBox4);
+
+            UpdateControl(
+                this.Symulacja.IsTemperatureAlert ? Color.Red : Color.Green,
+                this.Symulacja.IsTemperatureAlert ? Properties.Resources.silnik : Properties.Resources.silin_caly,
+                this.Okno_komunikatow.label1,
+                this.Okno_komunikatow.pictureBox1);
         }
     }
 }
